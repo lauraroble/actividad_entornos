@@ -2,7 +2,7 @@ package Act_2eval;
 
 import java.util.Objects;
 
-public class Diseñadores {
+public class Disenadores {
     private String nombre;
     private String departamento;
     private int numeroProyectos;
@@ -52,8 +52,8 @@ public class Diseñadores {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Diseñadores)) return false;
-        Diseñadores that = (Diseñadores) o;
+        if (!(o instanceof Disenadores)) return false;
+        Disenadores that = (Disenadores) o;
         return getNumeroProyectos() == that.getNumeroProyectos() &&
                 Float.compare(that.getSueldo(), getSueldo()) == 0 &&
                 Objects.equals(getNombre(), that.getNombre()) &&
@@ -66,7 +66,7 @@ public class Diseñadores {
         return Objects.hash(getNombre(), getDepartamento(), getNumeroProyectos(), getSueldo(), getEmail());
     }
 
-    public Diseñadores(String nombre, String departamento, int numeroProyectos, float sueldo, String email) {
+    public Disenadores(String nombre, String departamento, int numeroProyectos, float sueldo, String email) {
         this.nombre = nombre;
         this.departamento = departamento;
         this.numeroProyectos = numeroProyectos;

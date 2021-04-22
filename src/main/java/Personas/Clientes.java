@@ -67,9 +67,9 @@ public class Clientes {
         return Objects.hash(getNombre(), getNombreEmpresa(), getId_cliente(), getDeuda(), getDescripcion());
     }
 
-    public Clientes(String nombre, String nombreEmpresa, int id_cliente, float deuda, String descripcion) {
-        this.nombre = nombre;
-        this.nombreEmpresa = nombreEmpresa;
+    public Clientes(String nom, String nombreEmp, int id_cliente, float deuda, String descripcion) {
+        this.nombre = nom;
+        this.nombreEmpresa = nombreEmp;
         this.id_cliente = id_cliente;
         this.deuda = deuda;
         this.descripcion = descripcion;
